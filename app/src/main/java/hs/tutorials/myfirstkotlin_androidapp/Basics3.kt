@@ -33,5 +33,5 @@ fun main() {
         println(untilZero)
         untilZero--
     }
-    println("We find a Zero")
+    println("We find Zero")
 }
