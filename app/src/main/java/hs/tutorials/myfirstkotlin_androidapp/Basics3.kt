@@ -31,7 +31,7 @@ fun main() {
     var untilZero = 100
     while(untilZero > 0){
         println(untilZero)
-        untilZero++
+        untilZero--
     }
-    println("We find Zero")
+    println("We find a Zero")
 }
