@@ -34,4 +34,51 @@ fun main() {
         untilZero--
     }
     println("We find Zero")
+
+
+    // while 문은 while 탈출 시 1회 실행됨.
+    x = 1
+    do{
+        print("$x")
+        x++
+    }while (x <= 10)
+    println("\ndo while loop is done")
+
+    var feltTemp = "cold"
+    var roomTemp = 10
+    while (feltTemp == "cold"){
+        println("[Temp : $roomTemp] it's cold...")
+        roomTemp++
+        if(roomTemp >= 20){
+            feltTemp = "Comfy"
+            println("[Temp : $roomTemp] it's comfy now")
+        }
+    }
+
+    for(num in 1..10){
+        println("$num") // ..은 1부터 10 포함
+    }
+
+    for(i in 1 until 10){
+        println("$i") // until은 1부터 10 포함 x
+    }
+
+    for(i in 10 downTo 1 step 2){
+        println("$i")
+    }
+
+    var q = 0
+    while(q <= 9000){
+        q++
+        if(q > 9000){
+            println("IT'S OVER 9000!!!")
+        }
+    }
+
+    for(i in 1..19){
+        if(i/2 ==5){
+            continue
+        }
+        print("$i")      // 정수형을 나눴을 때 소수가 나오면, 소수점 뒤는 무시됨 , 5.5 -> 5
+    }
 }
