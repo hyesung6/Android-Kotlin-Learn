@@ -10,4 +10,8 @@ fun main() {
     var len = name.length
     var len2 = nullableName?.length
     nullableName?.let {println(it.length)}
+
+    // ? : Elvis operator
+    val names = nullableName ?: "Guest"
+    println("name is $names")
 }
