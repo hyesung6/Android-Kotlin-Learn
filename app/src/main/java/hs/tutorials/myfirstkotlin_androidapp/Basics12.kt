@@ -41,5 +41,3 @@ fun main() {
 타입 추론해주는 편리한 arrayOf 가 있는데,
 intArrayOf 등을 쓰는 이유? : 데이터베이스에 값을 전달할 때 코드가 바로 해결할 수 있음
  */
-
-data class Fruit(val name: String, val price: Double)

@@ -10,7 +10,7 @@ package hs.tutorials.myfirstkotlin_androidapp
 => 추상 클래스는 필드와 생성자를 추가할 수 있음
 */
 
-abstract class Pizza(private val size: String, private val prize: Int){
+abstract class Pizza(private val size: String, private val price: Int){
 
     // 추상 프로퍼티 ( 서브 클래스에서 오버라이딩하여 사용 )
     abstract var tax: Int
@@ -20,11 +20,11 @@ abstract class Pizza(private val size: String, private val prize: Int){
     abstract fun bake()
 
     init {
-        println("size : $size, prize : $prize")
+        println("size : $size, price : $price")
     }
 }
 
-class CheesePizza(size: String, prize: Int, override var tax: Int): Pizza(size, prize){
+class CheesePizza(size: String, price: Int, override var tax: Int): Pizza(size, price){
 
     override fun knead() {
         println("Pizza is kneading...")
